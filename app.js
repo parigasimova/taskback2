@@ -8,12 +8,12 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-  let connection = mysql.createConnection({
-    host: "bfsrwmygpfnliot7if34-mysql.services.clever-cloud.com",
-    user: "uodru6c0reoxvzds",
-    password: "66GmTjUrFjSGaKlQEckD",
-    database: "bfsrwmygpfnliot7if34",
-  });
+let connection = mysql.createConnection({
+  host: "berzz9slsesve1qrxd7k-mysql.services.clever-cloud.com",
+  user: "uortu7wj3uywsssa",
+  password: "z8iqlcKCaJWO4VU0VgT1",
+  database: "berzz9slsesve1qrxd7k",
+});
   app.get("/users", function (req, res) {
    
   connection.query(
@@ -75,5 +75,6 @@ app.post("/users", (req, res) => {
       }
     );
   });
-       
+        
+
 app.listen(process.env.PORT || 3000);
