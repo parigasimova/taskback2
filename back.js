@@ -43,7 +43,7 @@ app.get("/users/:id", (req, res) => {
 app.delete("/users/:id", (req, res) => {
   const elem = req.params.id;
   const silininenElementArray = db.filter(
-    (element) => element.actor_id != elem
+    (element) => element.ID != elem
   );
   connection.query(
     `DELETE FROM users WHERE ID=${elem}`,
